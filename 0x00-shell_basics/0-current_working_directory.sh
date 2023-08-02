@@ -1,2 +1,0 @@
-#!/bin/bash
-echo $(realpath 0-current_working_directory.sh)
