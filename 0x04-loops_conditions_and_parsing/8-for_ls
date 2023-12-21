@@ -3,7 +3,7 @@
 #   Displays hours from 0 to 12
 #   Displays minutes from 1 to 59
 
-for filename in `ls *`;
-do
-	echo "$filename" | cut -d '-' -f2
+list=$(ls)
+for i in $list; do
+  echo "$i" | cut -d '-' -f2
 done
