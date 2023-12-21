@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Displays the time for 12 horus and 59 minutes.
+#   Displays hours from 0 to 12
+#   Displays minutes from 1 to 59
+
+for filename in `ls *`;
+do
+	echo "$filename"
+done

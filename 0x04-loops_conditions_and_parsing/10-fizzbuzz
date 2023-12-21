@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Displays numbers from 1 to 20 in addition to:
+#   "bad luck from China" for the 4th iteration
+#   "bad luck from Japan" for the 9th iteration
+#   "bad luck from Italy" for the 17th loop iteration
+
+count=1
+
+while [ $count -le 100 ]
+do
+	if [ $count%3 -eq 0 && $count%5 -eq 0 ]
+	then
+		echo "FizzBuzz"
+	elif [ $count%3 -eq 0 ]
+	then
+		echo "Fizz"
+	elif [ $count%5 -eq 0 ]
+	then
+		echo "Buzz"
+	else
+		echo "$count"
+	fi
+	(( count++ ))
+done
