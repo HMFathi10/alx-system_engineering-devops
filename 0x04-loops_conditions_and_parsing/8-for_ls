@@ -5,5 +5,5 @@
 
 for filename in `ls *`;
 do
-	echo "$filename"
+	echo "$filename" | cut -d '-' -f2
 done
